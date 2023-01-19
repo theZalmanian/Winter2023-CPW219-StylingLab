@@ -25,3 +25,9 @@ dd {
     width: 25px;
     height: 25px;
 }
+
+.printer-group {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
