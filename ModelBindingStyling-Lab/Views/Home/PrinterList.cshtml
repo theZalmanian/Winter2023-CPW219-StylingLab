@@ -6,21 +6,25 @@
 
 <h1>PrinterList</h1>
 
-<div class="card-group"> 
-    <div class="card">
-        <div class="card-header">Title</div>
-        <img src="..." class="card-img-top" alt="...">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Price</li>
-            <li class="list-group-item">Volume</li>
-            <li class="list-group-item">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Odio ut sem nulla pharetra. Malesuada proin libero nunc consequat 
-                interdum varius sit amet mattis. 
-            </li>
-        </ul>
-    </div>
+<div class="card-group">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-header">Title</div>
+            <img src="..." class="card-img-top" alt="...">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">SKU</li>
+                <li class="list-group-item">Price</li>
+                <li class="list-group-item">Volume</li>
+                <li class="list-group-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Odio ut sem nulla pharetra. Malesuada proin libero nunc consequat 
+                    interdum varius sit amet mattis. 
+                </li>
+            </ul>
+        </div>
+    }
 </div>
 
 <table class="table">
