@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+dd {
+    display: inline-block;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
