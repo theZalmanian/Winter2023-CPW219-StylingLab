@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.printer-group {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}

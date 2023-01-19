@@ -4,12 +4,10 @@
     ViewData["Title"] = "Printer List";
 }
 
-<h1>PrinterList</h1>
-
-<div class="card-group">
+<div class="printer-group">
     @foreach (var item in Model)
     {
-        <div class="card">
+        <div class="card text-center">
             <div class="card-header">@Html.DisplayFor(modelItem => item.Title)</div>
             <img src="@Html.DisplayFor(modelItem => item.PrinterImage)" class="card-img-top" alt="...">
             <ul class="list-group list-group-flush">
@@ -18,8 +16,7 @@
                 <li class="list-group-item">@Html.DisplayFor(modelItem => item.BuildVolume)</li>
                 <li class="list-group-item">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Odio ut sem nulla pharetra. 
+                    sed do eiusmod tempor.
                 </li>
             </ul>
         </div>
