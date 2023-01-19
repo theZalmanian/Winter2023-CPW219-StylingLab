@@ -10,63 +10,18 @@
     @foreach (var item in Model)
     {
         <div class="card">
-            <div class="card-header">Title</div>
-            <img src="..." class="card-img-top" alt="...">
+            <div class="card-header">@Html.DisplayFor(modelItem => item.Title)</div>
+            <img src="@Html.DisplayFor(modelItem => item.PrinterImage)" class="card-img-top" alt="...">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">SKU</li>
-                <li class="list-group-item">Price</li>
-                <li class="list-group-item">Volume</li>
+                <li class="list-group-item">@Html.DisplayFor(modelItem => item.SKU)</li>
+                <li class="list-group-item">@Html.DisplayFor(modelItem => item.Price)</li>
+                <li class="list-group-item">@Html.DisplayFor(modelItem => item.BuildVolume)</li>
                 <li class="list-group-item">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Odio ut sem nulla pharetra. Malesuada proin libero nunc consequat 
-                    interdum varius sit amet mattis. 
+                    Odio ut sem nulla pharetra. 
                 </li>
             </ul>
         </div>
     }
 </div>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.SKU)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BuildVolume)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrinterImage)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SKU)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BuildVolume)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrinterImage)
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
